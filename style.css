@@ -160,7 +160,7 @@ footer a {
 }
 
 /*PAGINA SIGNUP*/
-#container-signup{
+#container-signup {
     margin: 0 auto;
     min-height: 100%;
     max-width: 400px;
@@ -168,11 +168,11 @@ footer a {
     align-items: center;
 }
 
-.message{
+.message {
     margin: 10px 70px;
 }
 
-.message span{
+.message span {
     text-align: center;
     font-size: 17px;
     font-weight: bold;
@@ -180,7 +180,7 @@ footer a {
     color: #8e8e8e;
 }
 
-.cta-buttom{
+.cta-buttom {
     width: 320px;
     margin: 10px 0;
     height: 35px;
@@ -193,22 +193,59 @@ footer a {
     font-weight: bold;
 }
 
-.divisor-container{
+.divisor-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px 0;
 }
 
-.line{
+.line {
     height: 1px;
     background-color: #e6e6e6;
     width: 35%;
 }
 
-.divisor-tag{
+.divisor-tag {
     font-weight: bold;
     margin: 0 2.5%;
     color: #8e8e8e;
     user-select: none;
+}
+
+/*FIM PAGINA SIGNUP*/
+
+/*RESPOSIVIDADE*/
+@media (max-width: 850px) {
+    .left {
+        display: none;
+    }
+
+    #container {
+        width: 70%;
+    }
+
+    .right {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 560px) {
+    #container {
+        width: 90%;
+    }
+
+    #container-signup {
+        width: 90%;
+    }
+
+    input[type="password"], input[type="text"], input[type="submit"]{
+        width: 85%;
+    }
+    .cta-buttom{
+        width: 85%;
+    }
+    .message{
+       margin: 10px 25px;
+    }
 }
